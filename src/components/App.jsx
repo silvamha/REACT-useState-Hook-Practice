@@ -9,9 +9,9 @@ function App() {
     setCurrentTime(new Date().toLocaleTimeString());
   };
 
-// let timer = setTimeout(() =>{
-//   showTime()
-// },1000)
+  // let timer = setTimeout(() =>{
+  //   showTime()
+  // },1000)
 
   console.log(currentTime);
 
