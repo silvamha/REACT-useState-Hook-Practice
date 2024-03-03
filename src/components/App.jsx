@@ -1,21 +1,25 @@
 import React, { useState } from "react";
 
 function App() {
-  let time = new Date().toLocaleTimeString();
-  
-  const [currentTime, setCurrentTime] = useState(time)
+  const [currentTime, setCurrentTime] = useState(
+    new Date().toLocaleTimeString()
+  );
 
   const showTime = () => {
-    let newTime = new Date().toLocaleTimeString();
-    setCurrentTime(newTime)
-  }
-  console.log(currentTime);  
+    setCurrentTime(new Date().toLocaleTimeString());
+  };
 
+// let timer = setTimeout(() =>{
+//   showTime()
+// },1000)
+
+  console.log(currentTime);
 
   return (
     <div className="container">
       <h1>{currentTime}</h1>
-      <button onClick = {showTime}>Get Time</button>
+      {/* <h2 onLoad={timer}>Timer Goes Here</h2> */}
+      <button onClick={showTime}>Get Time</button>
     </div>
   );
 }
